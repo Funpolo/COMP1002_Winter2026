@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en"></html>
+<html lang="en">
 
-<html>
+
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Info Survey/Lab One</title>
+    <title>Info Survey</title>
      <style>
           input {
                display:block; 
@@ -29,8 +29,8 @@
 
 <body>
    <header>
-    <h1>User Info Survey</h1>
-    <p>Please answer the following questions</p>
+          <h1>User Info Survey</h1>
+          <p>Please answer the following questions</p>
    </header>
 
    <form method="post" action="">
@@ -50,17 +50,22 @@
         <input type="password" name="password" id="password" placeholder="Password"  pattern="^(?=.*[A-Z].*[A-Z])(?=.*[!@#$&*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8}$" title = "must have one number and one uppercase letter, one lowercase letter and one special character and be at least 8 characters long">
 
         <label for="password">Password Confirm:</label>
-        <input type="password" name="password_Confirm" id="password Confirm" placeholder=" Confirm Password">
+        <input type="password" name="password_Confirm" id="password_Confirm" placeholder="Confirm Password">
 
         <label for="dateofbirth">Date of Birthday:</label>
         <input type="date" name="dateofbirth" id="dateofbirth">
 
         <label for="gender"> Gender:</label>
+        <label for="male"> Male</label>
         <input type="radio" name="gender" id="male" value="male">
-        <input type="radio" name="gender" id="female" value="female">
+
         <label for="female">Female</label>
-        <input type="radio" name="gender" id="other" value="other">
+        <input type="radio" name="gender" id="female" value="female">
+        
         <label for="other">Other</label>
+        <input type="radio" name="gender" id="other" value="other">
+
+        <input type="submit" value="Submit Form">
     </fieldset>
    
 </form>
