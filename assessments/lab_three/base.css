@@ -83,5 +83,26 @@ img {
 
 /* Your Code Here! */ 
 
+/* used a descendant selector, tragted the main class which is the wrap class and then targeted the cards class */
+/*Made a grid box for the cards and made the cards take up 3 columns and repeat when the row is full*/
+.wrap.cards{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1rem;
+  
+}
+/* Tragted the 5th card for it to take up 2 rows instead of 1 */
+/* I was not sure how to get the first card move away without making the webiste look funny */
+.wrap.cards .card:nth-of-type(5) {
+  grid-column: span 2;
+  
+}
+
+/*just wanted to make the code look nicer */
+.eyebrow {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
 /* Bonus Challenge - 2 EXTRA marks */ 
 /* make the layout responsive & mobile first design */ 
